@@ -1,0 +1,154 @@
+/* Container */
+.morepage-container {
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #e7be72;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family:cursive;
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Section styles */
+  .section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .section h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Section text */
+  .section p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* Back button */
+  .back-button {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #142257;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on button */
+  .back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-In animation for each section */
+  .section:nth-child(odd) {
+    animation-delay: 0.5s;
+  }
+  
+  .section:nth-child(even) {
+    animation-delay: 1s;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    /* Stacking sections for smaller screens */
+    .morepage-container {
+      padding: 20px;
+    }
+  
+    /* Title font size adjustment */
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    /* Section padding and margin adjustments for mobile */
+    .section {
+      margin: 15px 0;
+      padding: 15px;
+    }
+  
+    /* Adjust section heading size */
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  
+    /* Adjust paragraph text size */
+    .section p {
+      font-size: 0.9rem;
+    }
+  
+    /* Back button font size adjustment */
+    .back-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* For very small screens (Mobile Portrait) */
+  @media only screen and (max-width: 480px) {
+    .title {
+      font-size: 2rem; /* Smaller font size for small devices */
+    }
+  
+    .section h2 {
+      font-size: 1.3rem; /* Smaller section titles */
+    }
+  
+    .section p {
+      font-size: 0.85rem; /* Slightly smaller text for small devices */
+    }
+  
+    .back-button {
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+  

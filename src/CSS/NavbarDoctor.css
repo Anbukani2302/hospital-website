@@ -1,0 +1,216 @@
+/* Navbar container */
+/* Prevent horizontal scrolling */
+
+
+.navbar-doctor {
+  background-image: url('../images/ourdoctor.png');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  height: 900px;
+}
+
+.logo-image {
+  width: 150px;  /* Adjust to fit your design */
+  height: 50px;  /* Keep aspect ratio */
+}
+
+/* Top navbar */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo11 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none; /* Hidden by default on larger screens */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+/* Aligning the Meet Our Doctors and Info text to the left */
+.meet-doctors,
+.doctors-info {
+  text-align: left; /* Align text to the left */
+  margin-left: 0;   /* Remove any default left margin */
+  padding-left: 0;  /* Remove any default left padding */
+  margin-top: 100px;
+  margin: 0;
+  padding: 0;
+}
+.meet-doctors{
+font-size: xx-large;
+margin-top: 80px;
+
+}
+
+.meet-doctors h1,
+.doctors-info p {
+  margin: 0;  /* Optional: Remove any unwanted margin for finer control */
+}
+.doctors-info p {
+  width: 30%;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+/* Mobile menu */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger button */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    background-color: #555;
+  }
+}
+
+/* Left side navbar help text */
+.navbar-help-text {
+  top: 30%;
+  left: 0;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  text-align: left;}
+
+.navbar-event-details {
+  top: 50%;
+  left: 0;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+  z-index: 5;
+  text-align: left;
+}
+
+/* Bottom Icons Fixed at the Bottom */
+.bottom-icons125{
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  z-index: 5;
+}
+/* Navbar Links Row */
+.navbar-links-row {
+  margin-top: 20px;
+}
+
+.links-list {
+  padding-left: 0;  /* Remove default left padding */
+  margin: 0;        /* Remove any default margin */
+  display: flex;    /* Align items in a row */
+  gap: 20px;        /* Add space between the links */
+  
+}
+
+.links-list li {
+  display: inline;  /* Ensure the items are displayed inline */
+  
+}
+.links-list li::before {
+  content: "•"; /* Unicode bullet */
+  color: white; /* Set bullet color to white */
+  margin-right: 10px; /* Space between the bullet and the text */
+  font-size: 20px;  /* Adjust the size of the bullet */
+}
+
+.links-list li a {
+  text-decoration: none; /* Remove text decoration (underline) */
+  color: white;          /* Set link text color to white */
+  padding: 10px;         /* Add some padding around the link */
+  font-size: 16px;       /* Set a standard font size */
+  transition: background-color 0.3s ease; /* Add a smooth hover transition */
+}
+
+.links-list li a:hover {
+  background-color: #333; /* Add a background color when hovering */
+  color: #ddd;            /* Change text color on hover */
+}
+
+
+/* Styling for individual items in the bottom icons */
+.bottom-icons125 .info-item125 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: -120px;
+  
+}
+.bottom-icons125 {
+  
+margin-top: 400px;
+display: flex;
+
+justify-content: center;
+padding: 10px 20px; /* You can adjust this to control the space around the whole section */
+gap: 20px;
+}
+
+
+.bottom-icons125 .icon-circle125 {
+  background-color:   #1F3584; /* Light background for icons */
+  /* Light background for icons */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-icons125.info-item125:hover {
+  color: #ddd;
+}
+
+.bottom-icons125 .icon-circle125:hover {
+  background-color: rgba(255, 255, 255, 1); /* Hover effect for icons */
+}

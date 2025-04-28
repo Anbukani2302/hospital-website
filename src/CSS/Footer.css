@@ -1,0 +1,129 @@
+/* Footer Container */
+.footer {
+  background-color: #f7f1f1; /* Dark blue background */
+  color: white; /* White text */
+  padding: 30px 20px;
+  margin-top: 100px;
+}
+.logo-image {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Space between the logo image and the text */
+}
+
+/* Footer Row - Flexbox for columns */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  gap: 20px; /* Adds spacing between columns */
+  color: black;
+  
+}
+.footer-text {
+  font-size: 20px; /* Comfortable font size */
+  line-height: 1.6; /* Spacing between lines for readability */
+  color: #111010; /* Neutral dark color for contrast */
+  text-align: justify; /* Align text evenly on both sides */
+  margin: 0 auto; /* Centers the text horizontally */
+}
+
+
+/* Footer Column */
+.footer-column {
+  flex: 1; /* Each column takes equal space */
+  min-width: 300px; /* Minimum width for smaller devices */
+  max-width: 240px; /* Maximum width to avoid overflow */
+  color: black;
+}
+
+/* Footer Heading */
+.footer-heading {
+  /* font-size: 18px; */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 16px; /* Font size for readability */
+  line-height: 1.8; /* Comfortable spacing between lines */
+  color: #111010; /* Text color */
+  text-align: justify; /* Aligns the text evenly on both sides */
+  margin: 0 auto; /* Centers the text horizontally */
+  width: 100%; /* Limits the width for better readability */
+  margin-top: 50px;
+}
+
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  gap: 30px;
+
+
+}
+
+.footer-links li {
+  font-size: 14px;
+  color: #1a1818;
+  margin: 5px 0;
+  font-size: larger;
+
+}
+
+.footer-links li:hover {
+  color: #f30999; /* Highlight on hover */
+  cursor: pointer;
+}
+
+/* Footer Icons */
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  margin-top: 50px;
+
+}
+
+.icon {
+  font-size: 20px; /* Icon size */
+  color: rgb(15, 14, 14);
+  transition: transform 0.3s, color 0.3s;
+  font-size: 30PX;
+  margin-left: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+  color: #0056b3; /* Highlight color */
+  cursor: pointer;
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column; /* Stack columns vertically */
+    gap: 30px; /* Add spacing between rows */
+  }
+
+  .footer-column {
+    max-width: 100%; /* Full width for columns on small screens */
+    text-align: center; /* Center-align content for better presentation */
+  }
+
+  .footer-text {
+    text-align: center; /* Center-align text for smaller devices */
+    margin: 0 auto; /* Center text horizontally */
+  }
+
+  .footer-links {
+    text-align: center; /* Center-align links for smaller screens */
+  }
+
+  .footer-icons {
+    justify-content: center; /* Center-align icons */
+  }
+}

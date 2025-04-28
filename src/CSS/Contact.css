@@ -1,0 +1,150 @@
+/* Base Styles (For Desktop) */
+.contact.container {
+    width: 70%;
+    /* height: 100%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #EEF9FF;
+    margin-top: 100px;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+  
+  .form-column1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+  }
+  .form-column2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    
+  }
+  .uhid-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .uhid-field {
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    background-color: #15B2F5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  
+  /* .input-label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  } */
+  .error {
+    color: red;
+    font-size: 16px;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Medium Screens (Tablets, 768px and smaller) */
+  @media (max-width: 768px) {
+    .contact.container {
+      width: 90%; /* Adjusts container width */
+      padding: 15px;
+    }
+  
+    .form {
+      width: 100%; /* Form takes full width */
+    }
+  
+    .form-row {
+      flex-direction: column; /* Stacks columns vertically */
+      gap: 20px;
+    }
+  
+    .uhid-field {
+      width: 70%; /* Adjusts UHID field width */
+    }
+  }
+  
+  /* Small Screens (Phones, 480px and smaller) */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px; /* Smaller title font size */
+    }
+  
+    .form-row {
+      flex-direction: column; /* Stacks inputs vertically */
+      gap: 15px;
+    }
+  
+    .uhid-field {
+      width: 90%; /* Full width for small screens */
+    }
+  
+    .submit-button {
+      font-size: 14px; /* Adjust button size */
+      padding: 8px 16px;
+    }
+  }
+  

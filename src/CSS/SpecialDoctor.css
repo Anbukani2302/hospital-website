@@ -1,0 +1,78 @@
+.specialists-container {
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect for the entire container */
+}
+
+.specialists-heading {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #142257;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for the heading */
+}
+
+.specialists-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect for the description */
+}
+
+.specialists-grid {
+  display: flex;
+
+  justify-content: center; /* Center the rows horizontally */
+}
+
+.specialists-row {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+  gap: 20px 80px; /* Adds vertical and horizontal space (20px row, 30px column) */
+  width: 100%; /* Ensures the row occupies full width */
+  max-width: 900px; /* Controls the width of the row */
+}
+
+.specialist-item {
+  font-size: 1.5rem;
+  color: #121314;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  animation: fadeUp 0.5s ease-in-out forwards; /* Fade-up animation */
+  animation-delay: 0.1s; /* Delay for staggered appearance */
+}
+
+.icon2 {
+  color: #1F3584;
+
+  font-size: 3rem;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

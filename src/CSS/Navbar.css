@@ -1,0 +1,371 @@
+/* General Navbar Styles */
+.navbar {
+  background-image: url('../images/Home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Section */
+.logo11{
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 30px;
+
+}
+.logo-image {
+  width: 150px;  /* Adjust to fit your design */
+  height: 50px;  /* Keep aspect ratio */
+}
+
+
+.logo span:first-child {
+  color: #0d6efd; /* Blue color */
+}
+
+.logo span:last-child {
+  color: white; /* White color */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  margin-right: 200px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  
+  }
+
+.nav-links a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.bottom-icons1{
+
+  display: flex;
+justify-content: center;
+gap:20px}
+.bottom-icons1 .info-item1 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.info-item1{
+  gap: 20px;
+}
+
+.bottom-icons1 .icon-circle1 {
+  background-color: #1f3584; /* Light background for icons */
+  color:white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-icons1 .info-item1:hover {
+  color: #ddd;
+}
+
+.bottom-icons1 .icon-circle1:hover {
+  background-color: rgba(255, 255, 255, 1); /* Hover effect for icons */
+}
+
+/* Right Section (Emergency and Call) */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.emergency {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.call-us-btns11 {
+  background-color: #e60101;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 15%;
+  position: absolute;
+  top: -5px;
+  left: 90%;
+  transform: translateX(-50%);
+  animation: blinkAnimation 1.5s infinite alternate; /* Add blinking animation */
+}
+
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fade out */
+  }
+  100% {
+    opacity: 09; /* Back to visible */
+  }
+}
+
+
+
+.call-us-btn1:hover {
+  background-color: #d52c2c;
+}
+
+/* Center Content */
+.center-content {
+  text-align: center;
+  margin: auto 0 300px 0;
+  margin-top: 50px;
+}
+
+.main-heading {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+/* Bottom Row with Icons */
+.info-row {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 50px; /* Spacing between each item */
+  flex-direction: row;
+  justify-content: center;
+
+}
+/* Centering the navbar-links-row */
+.navbar-links-row {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically, if needed */
+  width: 100%; /* Ensure the row takes up full width */
+  margin: 0 auto; /* Optional: Helps with centering when there's space */
+  color: white;
+}
+
+.links-list {
+  list-style-type: none; /* Remove list bullets */
+  display: flex; /* Align the list items horizontally */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.links-list li {
+  margin: 0 15px; /* Optional: Add some space between the links */
+}
+
+.links-list li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Link text color (change as needed) */
+}
+
+
+.info-item {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon and text vertically */
+  gap: 10px; /* Space between icon and text */
+  color: white; /* Text color */
+  font-size: 18px; /* Text size */
+  text-align: center; /* Align text */
+  transition: color 0.3s ease; /* Smooth hover effect */
+  text-decoration: none; /* Remove underline */
+
+}
+
+.info-item:hover {
+  color: #ffcc00; /* Change color on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.icon-circle {
+  display: flex; /* Center icon in the circle */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 45px; /* Circle width */
+  height: 45px; /* Circle height */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #1f3584; /* Circle background color */
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+
+.appointment-button {
+  background-color: #15b2f5;
+  color: white;
+  border: none;
+  padding: 10px 50px 10px 30px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  width: 25%;
+}
+
+.appointment-button1:hover {
+  background-color: #26abee;
+}
+
+.clock-icon {
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 50px;
+}
+
+/* Bottom Row with Icons */
+.info-row {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #1f3584;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  gap: 10px;
+  flex-direction: row;
+
+}
+
+.info-item:hover {
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block; /* Show toggle icon */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    left: 10;
+    right: 0;
+    background-color: rgba(23, 185, 235, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .right-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .appointment-btn {
+    width: 55%;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    padding: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icon-circle {
+    width: 45px;
+    height: 45px;
+  }
+}

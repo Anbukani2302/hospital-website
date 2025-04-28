@@ -1,0 +1,195 @@
+/* Navbar container */
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden; /* This will prevent horizontal scrolling */
+  margin: 0; /* Ensure no extra margin exists */
+  padding: 0; /* Remove any unwanted padding */
+}
+
+.event-navbar {
+  background-image: url('../images/event.png');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  height: 900px;
+}
+
+
+/* Top navbar */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo-image {
+  width: 150px;  /* Adjust to fit your design */
+  height: 50px;  /* Keep aspect ratio */
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none; /* Hidden by default on larger screens */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Mobile menu */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger button */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    background-color: #555;
+  }
+}
+
+/* Left side navbar help text */
+.navbar-help-text {
+  top: 30%;
+  left: 0;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  text-align: left;}
+
+.navbar-event-details {
+  top: 50%;
+  left: 0;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+  z-index: 5;
+  text-align: left;
+}
+
+/* Bottom Icons Fixed at the Bottom */
+.bottom-icons {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  z-index: 5;
+  margin-top: 350px;
+}
+/* Navbar Links Row */
+.navbar-links-row {
+  margin-top: 20px;
+}
+
+.links-list {
+  padding-left: 0;  /* Remove default left padding */
+  margin: 0;        /* Remove any default margin */
+  display: flex;    /* Align items in a row */
+  gap: 20px;        /* Add space between the links */
+  
+}
+
+.links-list li {
+  display: inline;  /* Ensure the items are displayed inline */
+  
+}
+.links-list li::before {
+  content: "•"; /* Unicode bullet */
+  color: white; /* Set bullet color to white */
+  margin-right: 10px; /* Space between the bullet and the text */
+  font-size: 20px;  /* Adjust the size of the bullet */
+}
+
+.links-list li a {
+  text-decoration: none; /* Remove text decoration (underline) */
+  color: white;          /* Set link text color to white */
+  padding: 10px;         /* Add some padding around the link */
+  font-size: 16px;       /* Set a standard font size */
+  transition: background-color 0.3s ease; /* Add a smooth hover transition */
+}
+
+.links-list li a:hover {
+  background-color: #333; /* Add a background color when hovering */
+  color: #ddd;            /* Change text color on hover */
+}
+
+
+/* Styling for individual items in the bottom icons */
+.bottom-icons12e .info-item12 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  
+}
+.bottom-icons12e {
+  
+margin-top: 350px;
+display: flex;
+
+justify-content: center;
+padding: 10px 20px; /* You can adjust this to control the space around the whole section */
+gap: 20px;
+}
+
+
+.bottom-icons12e .icon-circle12 {
+  background-color:   #1F3584; /* Light background for icons */
+  /* Light background for icons */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-icons12e .info-item12:hover {
+  color: #ddd;
+}
+
+.bottom-icons12e .icon-circle12:hover {
+  background-color: rgba(255, 255, 255, 1); /* Hover effect for icons */
+}

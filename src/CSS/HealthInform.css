@@ -1,0 +1,150 @@
+/* General Styles */
+.health-info-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  .health-topics{
+    background-color: rgb(231, 238, 236);
+    margin-top: 100px;
+  }
+ 
+  /* Header Styles */
+  h1.fade-in {
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2.slide-up {
+    animation: slideUp 1.5s ease-out;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+ 
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Card Layout */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: rgb(212, 209, 247);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 20px);
+    margin-bottom: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 1 1 calc(45% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* Articles Section */
+  .health-articles {
+background-color: beige;
+  }
+  
+  .health-articles ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .health-articles .card {
+    margin: 10px 0;
+    background-color: rgb(185, 238, 220);
+  }
+  
+  .health-articles .card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .health-articles .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Testimonial Section */
+  .health-testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+  
+  .testimonial-card {
+    background-color: #517bf0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-card p {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .testimonial-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  

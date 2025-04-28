@@ -1,0 +1,191 @@
+/* General Styling */
+.event-journey {
+    width:80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow: hidden;
+    
+  }
+  
+  /* Heading Section */
+  .heading-section {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .event-heading {
+    font-size: 36px;
+    color: #1f3584;
+    margin-bottom: 10px;
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  .subheading {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Rows with Image Left, Content Right */
+  .row-line1, .row-line2, .row-line3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-direction: row;
+    animation: fadeIn 1s ease-in-out;
+    gap: 20px;
+  }
+  .row-line1{
+    background-color:rgb(231, 229, 229);
+    height: 600px;
+  }
+  .row-line2{
+    background-color:rgb(231, 229, 229);
+    height: 600px;
+  }
+  .row-line3{
+    background-color:rgb(231, 229, 229);
+    height: 600px;
+  }
+ 
+  
+  /* More Button Styling */
+  .more-button-container {
+    flex: 0.2; /* Adjust width proportionally */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+  }
+  
+  .more-buttons {
+    background-color: #1f3584; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .more-button:hover {
+    background-color: #0d255f; /* Darker shade on hover */
+  }
+  
+  /* Content Styling */
+  .content-event1, .content-event2, .content-event3 {
+    flex: 1;
+    padding: 20px;
+    animation: slideLeft 1s ease-in-out;
+    font-size:22px;
+    font-family:  sans-serif;
+  }
+  
+  .content-event1 h2, .content-event2 h2, .content-event3 h2 {
+    font-size: 24px;
+    color: #1f3584;
+    margin-bottom: 10px;
+    font-size:22px;
+    font-family:  sans-serif;
+  }
+  
+  .content-event1 p, .content-event2 p, .content-event3 p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease-in-out;
+    font-size:22px;
+    font-family:  sans-serif;
+    text-align: left; /* Ensure text is aligned to the left */
+
+  }
+  
+  
+  /* Image Styling */
+  .image-event1, .image-event2, .image-event3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideRight 1s ease-in-out;
+  }
+  
+  .image-event1 img, .image-event2 img, .image-event3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .image-event1 img:hover, .image-event2 img:hover, .image-event3 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row-line1, .row-line2, .row-line3 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content-event1, .content-event2, .content-event3 {
+      padding: 10px;
+    }
+  
+    .image-event1, .image-event2, .image-event3 {
+      padding: 10px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

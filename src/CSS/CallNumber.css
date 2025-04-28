@@ -1,0 +1,86 @@
+.container {
+    display: flex; /* Use flexbox to arrange content and image horizontally */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between; /* Ensure content and image are spaced out */
+    padding: 20px;
+  }
+  
+  .contents {
+    flex: 1; /* Allow content to take up available space */
+    text-align: left;
+    padding: 10px;
+    margin-left: 100px;
+  }
+  
+  .description {
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+
+  
+  .appointment {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+
+  }
+  
+  .button {
+    background-color: #15B2F5; /* Blue button */
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+    width: 30%;
+    font-size: x-large;
+    list-style: underline;
+
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  /* If you have this in your styles, remove or modify it */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  .button {
+    animation: blink 1s infinite; /* This causes blinking, remove this line */
+  }
+  
+  .image {
+    flex: 1; /* Allow image to take up available space */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .image img {
+    width: 80%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack content and image vertically on small screens */
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .button {
+      margin-top: 10px; /* Add spacing between button and text */
+    }
+  
+    .image {
+      margin-top: 20px; /* Add spacing between image and text */
+    }
+  }
+  
